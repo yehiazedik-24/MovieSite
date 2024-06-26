@@ -1,3 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+  background-color: rgb(6, 12, 24);
+}
+.app-container{
+  background-color: rgb(6, 12, 24);
+}
+p,h1,h2,h3,h4,h5,h6{
+  color: #fff !important;
+  text-decoration: none !important;
+}
+a{
+  text-decoration: none !important;
+}
+small{
+ 
+}
+
+
+.genres-item {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 3px;
+}
+
+
+
 .App {
   text-align: center;
 }
@@ -6,13 +44,52 @@
   height: 40vmin;
   pointer-events: none;
 }
+.epic{
+  color: #949cb0 !important;
+  text-shadow: 2px -1px 13px rgba(109,18,129,1);
+}
+.coza{
+  color: rgb(255, 241, 47);
+  font-size: 17px;
+}
+.welcome-container {
+  background: linear-gradient(45deg, #2c2c2c, #1c1c1c);
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: #fff;
+}
+
+.welcome-title {
+  font-family: 'Arial', sans-serif;
+  font-size: 3.5rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.welcome-text {
+  font-family: 'Verdana', sans-serif;
+  font-size: 1.2rem;
+  margin-top: 20px;
+  line-height: 1.5;
+}
+
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
+.span{
 
+}
+.iconz{
+font-size: 25px;
+color: #333333;
+margin-left:15px ;
+margin-top: 5px;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -27,7 +104,58 @@
 .App-link {
   color: #61dafb;
 }
+.navbar {
+  background-color: #f8f9fa;
+}
 
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  background-image: none;
+}
+
+.iconz {
+  margin-left: 10px;
+  font-size: 20px;
+  color: #000;
+}
+
+@media (max-width: 768px) {
+  .navbar .col-lg-9 {
+    order: 2;
+  }
+  
+  .navbar .col-lg-3 {
+    order: 1;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .navbar-toggler {
+    margin-left: auto;
+  }
+  
+  .responsive-ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .responsive-ul ul {
+    width: 100%;
+  }
+  
+  .responsive-ul ul li {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .form-control {
+    width: 100%;
+  }
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
